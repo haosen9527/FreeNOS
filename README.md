@@ -6,7 +6,11 @@ Authors:
     Coen Bijlsma (libparse, srv/time)
     Ed Schouten (libteken)
     Alexander Schrijver (OpenBSD patches)
-
+# EDIT
++ edit Sconstruct
+``` python
+  build_env.Append(CCFLAGS='-m32 -Wno-cpp -Wno-unused-variable -Wno-sign-compare')
+```
 # INSTALL
 + env
 ``` shell
